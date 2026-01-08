@@ -1,5 +1,5 @@
 {
-  "name": "budgetsms-client-js",
+  "name": "budgetsms-client",
   "version": "1.0.0",
   "description": "Unofficial TypeScript/JavaScript client for BudgetSMS.net HTTP API with full type safety and dual ESM/CJS support",
   "keywords": [
@@ -10,13 +10,13 @@
     "typescript",
     "messaging"
   ],
-  "homepage": "https://github.com/Frozenverse/budgetsms-client-js#readme",
+  "homepage": "https://github.com/Frozenverse/budgetsms-client#readme",
   "bugs": {
-    "url": "https://github.com/Frozenverse/budgetsms-client-js/issues"
+    "url": "https://github.com/Frozenverse/budgetsms-client/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Frozenverse/budgetsms-client-js.git"
+    "url": "git+https://github.com/Frozenverse/budgetsms-client.git"
   },
   "license": "MIT",
   "author": "Nick Leeman",

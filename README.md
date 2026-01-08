@@ -1,15 +1,15 @@
-# budgetsms-client-js
+# budgetsms-client
 
 Modern, type-safe TypeScript/JavaScript client for the [BudgetSMS.net](https://www.budgetsms.net) HTTP API.
 
 > **Note:** This is an **unofficial** client library and is not affiliated with or endorsed by BudgetSMS.net. It is a community-maintained open-source project.
 
-[![npm version](https://img.shields.io/npm/v/budgetsms-client-js.svg)](https://www.npmjs.com/package/budgetsms-client-js)
-[![CI](https://github.com/Frozenverse/budgetsms-client-js/workflows/CI/badge.svg)](https://github.com/Frozenverse/budgetsms-client-js/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/budgetsms-client.svg)](https://www.npmjs.com/package/budgetsms-client)
+[![CI](https://github.com/Frozenverse/budgetsms-client/workflows/CI/badge.svg)](https://github.com/Frozenverse/budgetsms-client/actions/workflows/ci.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org/)
-[![npm downloads](https://img.shields.io/npm/dm/budgetsms-client-js.svg)](https://www.npmjs.com/package/budgetsms-client-js)
+[![npm downloads](https://img.shields.io/npm/dm/budgetsms-client.svg)](https://www.npmjs.com/package/budgetsms-client)
 
 ## Features
 
@@ -26,15 +26,15 @@ Modern, type-safe TypeScript/JavaScript client for the [BudgetSMS.net](https://w
 ## Installation
 
 ```bash
-npm install budgetsms-client-js
+npm install budgetsms-client
 ```
 
 ```bash
-yarn add budgetsms-client-js
+yarn add budgetsms-client
 ```
 
 ```bash
-pnpm add budgetsms-client-js
+pnpm add budgetsms-client
 ```
 
 ## Quick Start
@@ -42,7 +42,7 @@ pnpm add budgetsms-client-js
 ### TypeScript / ESM
 
 ```typescript
-import { BudgetSMS } from 'budgetsms-client-js';
+import { BudgetSMS } from 'budgetsms-client';
 
 // Initialize the client
 const client = new BudgetSMS({
@@ -64,7 +64,7 @@ console.log(`SMS sent with ID: ${result.smsId}`);
 ### JavaScript / CommonJS
 
 ```javascript
-const { BudgetSMS } = require('budgetsms-client-js');
+const { BudgetSMS } = require('budgetsms-client');
 
 // Initialize the client
 const client = new BudgetSMS({
@@ -88,7 +88,7 @@ client.sendSMS({
 ### JavaScript / ESM (Node.js with "type": "module")
 
 ```javascript
-import { BudgetSMS } from 'budgetsms-client-js';
+import { BudgetSMS } from 'budgetsms-client';
 
 const client = new BudgetSMS({
   username: 'your-username',
@@ -110,7 +110,7 @@ console.log(`SMS sent with ID: ${result.smsId}`);
 ### Initialize Client
 
 ```typescript
-import { BudgetSMS } from 'budgetsms-client-js';
+import { BudgetSMS } from 'budgetsms-client';
 
 const client = new BudgetSMS({
   username: 'your-username',    // Your BudgetSMS username
@@ -208,7 +208,7 @@ const result = await client.checkSMS('12345678'); // SMS ID from sendSMS()
 console.log(`Status: ${result.status}`);
 
 // Use DLRStatus enum for type-safe status checking
-import { DLRStatus, DLR_STATUS_MESSAGES } from 'budgetsms-client-js';
+import { DLRStatus, DLR_STATUS_MESSAGES } from 'budgetsms-client';
 
 if (result.status === DLRStatus.DELIVERED) {
   console.log('Message was delivered!');
@@ -236,7 +236,7 @@ for (const entry of pricing) {
 The client uses typed error handling with the `BudgetSMSError` class.
 
 ```typescript
-import { BudgetSMSError, BudgetSMSErrorCode } from 'budgetsms-client-js';
+import { BudgetSMSError, BudgetSMSErrorCode } from 'budgetsms-client';
 
 try {
   await client.sendSMS({
@@ -272,7 +272,7 @@ try {
 All BudgetSMS API error codes are available as an enum:
 
 ```typescript
-import { BudgetSMSErrorCode, ERROR_MESSAGES } from 'budgetsms-client-js';
+import { BudgetSMSErrorCode, ERROR_MESSAGES } from 'budgetsms-client';
 
 // Access error codes
 BudgetSMSErrorCode.NOT_ENOUGH_CREDITS        // 1001
@@ -290,7 +290,7 @@ console.log(ERROR_MESSAGES[BudgetSMSErrorCode.NOT_ENOUGH_CREDITS]);
 Delivery report statuses are available as an enum:
 
 ```typescript
-import { DLRStatus, DLR_STATUS_MESSAGES } from 'budgetsms-client-js';
+import { DLRStatus, DLR_STATUS_MESSAGES } from 'budgetsms-client';
 
 // DLR status values
 DLRStatus.DELIVERED              // 1 - Message is delivered
@@ -309,7 +309,7 @@ console.log(DLR_STATUS_MESSAGES[DLRStatus.DELIVERED]);
 The package includes validation utilities for common use cases:
 
 ```typescript
-import { validatePhoneNumber, validateSender, validateMessage } from 'budgetsms-client-js';
+import { validatePhoneNumber, validateSender, validateMessage } from 'budgetsms-client';
 
 // Validate phone number (8-16 digits)
 if (!validatePhoneNumber('31612345678')) {
@@ -341,7 +341,7 @@ import type {
   OperatorResponse,
   PricingEntry,
   // ... and more
-} from 'budgetsms-client-js';
+} from 'budgetsms-client';
 ```
 
 ## Requirements
@@ -354,8 +354,8 @@ import type {
 
 This package is **fully compatible with JavaScript** projects:
 
-- ✅ **JavaScript (CommonJS)**: `require('budgetsms-client-js')`
-- ✅ **JavaScript (ESM)**: `import { BudgetSMS } from 'budgetsms-client-js'`
+- ✅ **JavaScript (CommonJS)**: `require('budgetsms-client')`
+- ✅ **JavaScript (ESM)**: `import { BudgetSMS } from 'budgetsms-client'`
 - ✅ **TypeScript**: Full type definitions included
 - ✅ **No TypeScript required**: The package ships as compiled JavaScript
 - ✅ **IntelliSense support**: Get autocomplete even in JavaScript projects (VS Code, etc.)
@@ -366,7 +366,7 @@ You don't need TypeScript installed to use this package. It's written in TypeScr
 
 ```javascript
 // Plain JavaScript - works perfectly!
-const { BudgetSMS } = require('budgetsms-client-js');
+const { BudgetSMS } = require('budgetsms-client');
 
 const client = new BudgetSMS({
   username: 'test',
@@ -383,7 +383,7 @@ client.sendSMS({ /* autocomplete works here! */ });
 Full type safety out of the box:
 
 ```typescript
-import { BudgetSMS, SendSMSResponse, BudgetSMSError } from 'budgetsms-client-js';
+import { BudgetSMS, SendSMSResponse, BudgetSMSError } from 'budgetsms-client';
 
 const client = new BudgetSMS({ ... });
 const result: SendSMSResponse = await client.sendSMS({ ... });
@@ -395,10 +395,10 @@ This package supports both ESM and CommonJS:
 
 ```typescript
 // ESM (TypeScript or JavaScript with "type": "module")
-import { BudgetSMS } from 'budgetsms-client-js';
+import { BudgetSMS } from 'budgetsms-client';
 
 // CommonJS (Traditional Node.js)
-const { BudgetSMS } = require('budgetsms-client-js');
+const { BudgetSMS } = require('budgetsms-client');
 ```
 
 ## Examples
@@ -433,8 +433,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Support
 
 - 📧 For BudgetSMS API issues: [contact BudgetSMS support](https://www.budgetsms.net/contact/)
-- 🐛 For package issues: [GitHub Issues](https://github.com/Frozenverse/budgetsms-client-js/issues)
+- 🐛 For package issues: [GitHub Issues](https://github.com/Frozenverse/budgetsms-client/issues)
 
 ## Changelog
 
-See [Releases](https://github.com/Frozenverse/budgetsms-client-js/releases) for version history.
+See [Releases](https://github.com/Frozenverse/budgetsms-client/releases) for version history.

@@ -1,11 +1,11 @@
 /**
  * JavaScript Example - CommonJS
  *
- * This example shows how to use budgetsms-client-js in a plain JavaScript
+ * This example shows how to use budgetsms-client in a plain JavaScript
  * Node.js project (no TypeScript required).
  */
 
-const { BudgetSMS, BudgetSMSError } = require('budgetsms-client-js');
+const { BudgetSMS, BudgetSMSError } = require('budgetsms-client');
 
 // Initialize the client with your credentials
 const client = new BudgetSMS({

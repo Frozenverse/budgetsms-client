@@ -1,6 +1,6 @@
 # Examples
 
-This directory contains practical examples showing how to use `budgetsms-client-js` in different JavaScript/TypeScript environments.
+This directory contains practical examples showing how to use `budgetsms-client` in different JavaScript/TypeScript environments.
 
 ## Available Examples
 
@@ -67,7 +67,7 @@ All examples demonstrate:
 
 1. **Install the package:**
    ```bash
-   npm install budgetsms-client-js
+   npm install budgetsms-client
    ```
 
 2. **Get your credentials:**
@@ -112,5 +112,5 @@ All examples demonstrate:
 ## Getting Help
 
 - 📚 [Full API Documentation](../README.md)
-- 🐛 [Report Issues](https://github.com/Frozenverse/budgetsms-client-js/issues)
-- 💬 [Ask Questions](https://github.com/Frozenverse/budgetsms-client-js/discussions)
+- 🐛 [Report Issues](https://github.com/Frozenverse/budgetsms-client/issues)
+- 💬 [Ask Questions](https://github.com/Frozenverse/budgetsms-client/discussions)

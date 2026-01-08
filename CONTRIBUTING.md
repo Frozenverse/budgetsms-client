@@ -1,6 +1,6 @@
-# Contributing to budgetsms-client-js
+# Contributing to budgetsms-client
 
-Thank you for your interest in contributing to budgetsms-client-js! This document provides guidelines and instructions for contributing.
+Thank you for your interest in contributing to budgetsms-client! This document provides guidelines and instructions for contributing.
 
 ## Code of Conduct
 
@@ -17,13 +17,13 @@ Be respectful and considerate in all interactions. We're here to build great sof
 ### Setup Development Environment
 
 1. **Fork the repository**
-   - Visit https://github.com/Frozenverse/budgetsms-client-js
+   - Visit https://github.com/Frozenverse/budgetsms-client
    - Click "Fork" in the top right
 
 2. **Clone your fork**
    ```bash
-   git clone https://github.com/YOUR-USERNAME/budgetsms-client-js.git
-   cd budgetsms-client-js
+   git clone https://github.com/YOUR-USERNAME/budgetsms-client.git
+   cd budgetsms-client
    ```
 
 3. **Install dependencies**
@@ -136,7 +136,7 @@ Prefixes:
 ## Project Structure
 
 ```
-budgetsms-client-js/
+budgetsms-client/
 ├── src/
 │   ├── client.ts      # Main API client
 │   ├── types.ts       # TypeScript type definitions
@@ -188,8 +188,8 @@ budgetsms-client-js/
 
 ## Getting Help
 
-- **Questions**: Open a [GitHub Discussion](https://github.com/Frozenverse/budgetsms-client-js/discussions)
-- **Bugs**: Open a [GitHub Issue](https://github.com/Frozenverse/budgetsms-client-js/issues)
+- **Questions**: Open a [GitHub Discussion](https://github.com/Frozenverse/budgetsms-client/discussions)
+- **Bugs**: Open a [GitHub Issue](https://github.com/Frozenverse/budgetsms-client/issues)
 - **Features**: Discuss in issues before implementing large features
 
 ## License

@@ -1,7 +1,7 @@
 /**
  * TypeScript Example
  *
- * This example shows how to use budgetsms-client-js with full TypeScript
+ * This example shows how to use budgetsms-client with full TypeScript
  * type safety and autocomplete.
  */
 
@@ -15,7 +15,7 @@ import {
   BudgetSMSErrorCode,
   type SendSMSParams,
   type BudgetSMSConfig
-} from 'budgetsms-client-js';
+} from 'budgetsms-client';
 
 // Type-safe configuration
 const config: BudgetSMSConfig = {

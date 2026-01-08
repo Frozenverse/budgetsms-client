@@ -1,13 +1,13 @@
 /**
  * JavaScript Example - ESM
  *
- * This example shows how to use budgetsms-client-js in a JavaScript
+ * This example shows how to use budgetsms-client in a JavaScript
  * project using ES modules (import/export).
  *
  * To run this: node examples/javascript-esm-example.mjs
  */
 
-import { BudgetSMS, BudgetSMSError, DLRStatus } from 'budgetsms-client-js';
+import { BudgetSMS, BudgetSMSError, DLRStatus } from 'budgetsms-client';
 
 // Initialize the client
 const client = new BudgetSMS({

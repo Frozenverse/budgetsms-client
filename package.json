@@ -1,0 +1,63 @@
+{
+  "name": "budgetsms-client-js",
+  "version": "1.0.0",
+  "description": "Unofficial TypeScript/JavaScript client for BudgetSMS.net HTTP API with full type safety and dual ESM/CJS support",
+  "keywords": [
+    "budgetsms",
+    "sms",
+    "api",
+    "client",
+    "typescript",
+    "messaging"
+  ],
+  "homepage": "https://github.com/Frozenverse/budgetsms-client-js#readme",
+  "bugs": {
+    "url": "https://github.com/Frozenverse/budgetsms-client-js/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frozenverse/budgetsms-client-js.git"
+  },
+  "license": "MIT",
+  "author": "Nick Leeman",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.5",
+    "@vitest/coverage-v8": "^1.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

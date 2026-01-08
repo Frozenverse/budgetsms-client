@@ -1,0 +1,43 @@
+# Source files
+src/
+test/
+examples/
+
+# Config files
+tsconfig.json
+tsup.config.ts
+vitest.config.ts
+.npmrc
+
+# Development
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Test coverage
+coverage/
+
+# CI/CD
+.github/
+
+# Documentation source
+*.md
+!README.md
+
+# Build artifacts
+*.tsbuildinfo
+
+# Logs
+*.log
+
+# Environment
+.env
+.env.*
+
+# PDF documentation (already available from BudgetSMS)
+*.pdf
+
+# Lock files (optional, but keeping for consistency)
+package-lock.json

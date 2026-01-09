@@ -1,6 +1,6 @@
 {
   "name": "budgetsms-client",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial TypeScript/JavaScript client for BudgetSMS.net HTTP API with full type safety and dual ESM/CJS support",
   "keywords": [
     "budgetsms",
